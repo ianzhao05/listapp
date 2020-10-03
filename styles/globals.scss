@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+// @import "~react-virtualized/styles";
+
+body {
+  padding-left: calc(100vw - 100%);
+}
+
+.text-container {
+  width: 95%;
+  @include media-breakpoint-up(md) {
+    width: 75%;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 65%;
+  }
+}

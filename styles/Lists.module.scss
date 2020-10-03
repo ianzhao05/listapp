@@ -1,0 +1,33 @@
+.card {
+  height: 220px;
+  cursor: pointer;
+}
+
+.body {
+  position: relative;
+}
+
+.title {
+  line-height: 1.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.itemsList {
+  list-style-position: inside;
+}
+
+.time {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.likes {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
