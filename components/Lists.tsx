@@ -3,7 +3,7 @@ import { Container, Card, Row, Col, Form } from "react-bootstrap";
 import { formatDistanceToNowStrict, parseISO } from "date-fns";
 import Link from "next/link";
 import styles from "../styles/Lists.module.scss";
-import { useRef, useLayoutEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import {
   BookmarkStar,
   BookmarkStarFill,
@@ -18,7 +18,7 @@ const ListCard: React.FC<{ data: List; showAuthor: boolean }> = ({
   const ulRef = useRef<HTMLUListElement>(null);
   const [more, setMore] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const itemNodes = Array.from(ulRef.current.children) as HTMLElement[];
     for (let node of itemNodes) {
       node.hidden = false;
