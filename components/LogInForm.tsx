@@ -40,6 +40,7 @@ const LogInForm: React.FC<{
         values,
         errors,
         touched,
+        setValues,
         handleChange,
         handleBlur,
         handleSubmit,
@@ -48,6 +49,18 @@ const LogInForm: React.FC<{
         <>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit} noValidate>
+            <Form.Text muted className="mb-2">
+              You can use a test account (U: test, PW: 123) to try stuff out!{" "}
+              <Button
+                size="sm"
+                variant="outline-secondary"
+                onClick={() => {
+                  setValues({ username: "test", password: "123" });
+                }}
+              >
+                Fill form
+              </Button>
+            </Form.Text>
             <Form.Group>
               <Form.Label>Username</Form.Label>
               <Form.Control
