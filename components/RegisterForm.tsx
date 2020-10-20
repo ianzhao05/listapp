@@ -56,8 +56,7 @@ const RegisterForm: React.FC<{
         <>
           <Form onSubmit={handleSubmit} noValidate>
             <Form.Text muted className="mb-2">
-              You can use a test account (U: test, PW: 123) to try stuff out!{" "}
-              <Link href="/login">Sign in</Link>
+              You can use a test account! <Link href="/login">Sign in</Link>
             </Form.Text>
             <Form.Group>
               <Form.Label>Username</Form.Label>

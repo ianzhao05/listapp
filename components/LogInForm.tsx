@@ -50,7 +50,7 @@ const LogInForm: React.FC<{
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit} noValidate>
             <Form.Text muted className="mb-2">
-              You can use a test account (U: test, PW: 123) to try stuff out!{" "}
+              You can use a test account!{" "}
               <Button
                 size="sm"
                 variant="outline-secondary"
